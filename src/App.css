@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    align-items: center;
+    min-width: 70%;
+    height: 5vh;
+    justify-content: space-around;
+    display: flex;
+    border: solid black;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10 px;
+    position: sticky;
+    bottom: 0;
+}
+.home-main {
+    border: solid blue;
+    height: 100vh;
+}
+.home-title {
+    border:solid red;
+    display: flex;
+    justify-content: center;
+}
+.picture-text {
+    justify-content: space-between;
+    display: flex;
+    height: 80vh;
+    border: dotted red;
+}
+.home-text{
+    width: 70%;
+    border:solid aqua;
+}
+.home-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border:dotted pink;
+}
+.picture-container {
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(https://i.postimg.cc/mD9QJPh4/a3.jpg);
+    height: 40vh;
+    width: 40vh;
+    border: solid green;
+}
+
+
+/* About Me */
+h3 {
+    margin-left: 45%;
+}
+.about-main {
+    border: solid blue;
+    height: 100vh;
+}
+.about-split{
+    display: flex;
+    margin-top: 3%;
+    border:solid green;
+    height: 80%;
+}
+.credentials {
+    border: dashed red;
+    height: 100%;
+    width: 40%;
+}
+.experience {
+    width:60%;
+    border:solid yellow;
+}
