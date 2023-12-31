@@ -67,11 +67,11 @@ return(
     <form className="contact-form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <div className="name">
-            <div> <label>Name:</label> </div>
+            <div> <label>First & Last Name:</label> </div>
             <input type="text" name="from_name" />
         </div> 
         <div className="email">
-            <div> <label>Email:</label> </div>
+            <div> <label>Your Email:</label> </div>
             <input type="email" name="from_email" />
         </div>
         <div className="subject">
