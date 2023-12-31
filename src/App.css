@@ -1,11 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
 .header {
+    background-color: rgb(0, 128, 187);
     padding-left: 5vh;
     padding-right: 5vh;
     align-items: center;
@@ -13,11 +15,14 @@ body {
     height: 5vh;
     justify-content: space-around;
     display: flex;
-    border: solid black;
+}
+.header-buttons {
+    border-radius: 5px;
+    background-color: white;
 }
 
 .footer {
-    background-color: #333;
+    background-color: rgb(0, 128, 187);
     color: white;
     text-align: center;
     padding: 10 px;
@@ -25,61 +30,154 @@ body {
     bottom: 0;
 }
 .home-main {
-    border: solid blue;
+    flex:1;
+    overflow: scroll;
     height: 100vh;
 }
 .home-title {
-    border:solid red;
     display: flex;
     justify-content: center;
 }
 .picture-text {
-    justify-content: space-between;
     display: flex;
-    height: 80vh;
-    border: dotted red;
+    height: 100vh;
+
 }
 .home-text{
+    align-items: center;
+    width: 1000px;
+    display: flex;
+    font-size: 35px;
     width: 70%;
-    border:solid aqua;
+    height: 90%;
+    padding-left: 4vh;
+    padding-right: 4vh;
+
+}
+
+p.indent {
+    text-indent: 3vh;
 }
 .home-picture {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 30%;
-    border:dotted pink;
+    display: flex;
 }
+
 .picture-container {
+    min-width: 300px;
     background-size: cover;
     border-radius: 50%;
     background-image: url(https://i.postimg.cc/mD9QJPh4/a3.jpg);
     height: 40vh;
     width: 40vh;
-    border: solid green;
+    border: solid black;
 }
 
+@media only screen and (max-width: 430px) {
+    .picture-text {
+        display: block;
+    }
+    .reach-p {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .picture-container {
+        width: 20vh;
+        height: 20vh;
+        margin-left: 30vh;
+        margin-bottom: 2vh;
+    }
+
+    .home-text{
+        height: 50vh;
+        margin-top: 0vh;
+        text-align: left;
+        max-width: 100%;
+        padding-left: 30px;
+        font-size: 20px;
+        width: 100%;
+        
+    }
+
+    li {
+        font-size: 20px;
+    }
+    
+}
 
 /* About Me */
-h3 {
+h2 {
+    font-size: 40px;
     margin-left: 45%;
 }
 .about-main {
-    border: solid blue;
     height: 100vh;
 }
 .about-split{
     display: flex;
     margin-top: 3%;
-    border:solid green;
     height: 80%;
 }
 .credentials {
-    border: dashed red;
     height: 100%;
-    width: 40%;
+    width: 60%;
+}
+.credentials-title {
+    display: flex;
+    justify-content: center;
+}
+.credentials-bullets {
+    font-size: 30px;
+    display: flex;
 }
 .experience {
-    width:60%;
-    border:solid yellow;
+    width:40%;
+
+}
+.experience-title {
+    display: flex;
+    justify-content: center;
+}
+.experience-bullets {
+
+    justify-content: center;
+    font-size: 30px;
+}
+li {
+    margin-bottom: 3vh;
+}
+
+/* contact/ plans */
+
+.td {
+    margin-left: 5vh;
+}
+.small-text {
+    font-size: 10px;
+}
+.plans-title {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 440px;
+}
+.reach {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
