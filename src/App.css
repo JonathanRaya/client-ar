@@ -86,6 +86,7 @@ p.indent {
     }
 
     .picture-container {
+        margin-left: 2vh;
         width: 20vh;
         height: 20vh;
         margin-left: 30vh;
